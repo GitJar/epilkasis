@@ -1,3 +1,2 @@
-# e-voting
-
-Aplikasi E-voting berbasis web
+# epilkasis
+Pemilihan Ketua Osis
