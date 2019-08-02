@@ -10,7 +10,7 @@ if(!isset($_SESSION['siswa'])) {
 <html>
  <head>
     <meta charset="utf-8">
-    <title>E - Pilkasis</title>
+    <title>E - Pilketos</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./assets/css/animate.css"/>
     <style media="screen">

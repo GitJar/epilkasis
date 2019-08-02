@@ -4,7 +4,7 @@
 $host = 'localhost';
 $user = 'root';
 $pass = '';
-$db   = 'db_e-voting';
+$db   = 'db_evoting';
 
 $con  = new mysqli($host, $user, $pass, $db) or die(mysqli_error());
 

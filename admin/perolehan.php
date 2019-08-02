@@ -6,6 +6,7 @@
 </form>
 <button id="save-img" class="btn btn-success grafik">Simpan Grafik</button>
 		</div>
+		<div class="titel">Perolehan Suara</div>
 <div style="font-size:18px;">
    <canvas id="canvas"></canvas>
 </div>

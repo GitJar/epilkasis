@@ -2,7 +2,7 @@
 <html>
    <head>
       <meta charset="utf-8">
-      <title>Profil Calon ~ E - Pilkasis</title>
+      <title>Profil Calon ~ E - Pilketos</title>
       <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
       <style type="text/css">
          body {

@@ -23,12 +23,12 @@ for ($i=2; $i<=$hasildata; $i++)
   $data4 = $data->val($i,4);
   $data5 = $data->val($i,5);
  
-$query = "INSERT INTO t_user VALUES ('$data1','$data2','$data4', '$data3', '$data5')";
+$query = "INSERT INTO t_user VALUES ('$data1','$data2','$data3', '$data4', '$data5')";
 $hasil = mysqli_query($conn,$query);
  
 if ($hasil) $sukses++;
 else $gagal++;
  }
-	
+
 	include 'not.php';
 ?>

@@ -55,7 +55,7 @@ if (isset($_POST['submit'])) {
 <html>
       <head>
             <meta charset="utf-8">
-            <title>E - Pilkasis</title>
+            <title>E - Pilketos</title>
             <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
             <link rel="stylesheet" href="./assets/css/custom.css"/>
             <style type="text/css">

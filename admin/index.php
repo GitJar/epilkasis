@@ -55,7 +55,7 @@ if(isset($_POST['submit'])) {
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>E-Pilkasis - Login Form</title>
+  <title>E-Pilketos - Login Form</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -75,7 +75,7 @@ if(isset($_POST['submit'])) {
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="./"><b>Admin</b> E-Pilkasis</a>
+    <a href="./"><b>Admin</b> E-Pilketos</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">

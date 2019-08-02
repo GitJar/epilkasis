@@ -42,6 +42,10 @@ include('../include/connection.php');
       .grafik{
         float: right;
       }
+      .titel{
+        font-size: 42px;
+        text-align: center;
+      }
     </style>
   </head>
   <body class="hold-transition skin-blue sidebar-mini">
@@ -214,6 +218,7 @@ include('../include/connection.php');
     <script type="text/javascript" src="../assets/js/canvas-toBlob.js"></script>
     <?php } ?>
     <script type="text/javascript">
+
     // slideToggle()
     $(document).ready(function() {
       $(".dropdown-toggle").click(function() {
@@ -310,20 +315,41 @@ include('../include/connection.php');
     };
     window.onload = function() {
         var ctx = document.getElementById("canvas").getContext("2d");
-        window.myMixedChart = new Chart(ctx, {
+        var myMixedChart = new Chart(ctx, {
           type: 'bar',
           data: chartData,
           options: {
                 responsive: true,
                 title: {
                   display: true,
-                  text: 'Perolehan Suara',
+
                   fontSize: 30
                 },
-                 hover: {
-                  animationDuration: 0
-                },
+                animation: {
+            duration: 500,
+            easing: "easeOutQuart",
+            onComplete: function () {
+                var ctx = this.chart.ctx;
+                ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontFamily, 'normal', Chart.defaults.global.defaultFontFamily);
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'center';
+
+                this.data.datasets.forEach(function (dataset) {
+                    for (var i = 0; i < dataset.data.length; i++) {
+                        var model = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model,
+                            scale_max = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._yScale.maxHeight;
+                        ctx.fillStyle = '#444';
+                        var y_pos = model.y - 5;
+                        
+                        if ((scale_max - model.y) / scale_max >= 0.93)
+                            y_pos = model.y + 20; 
+                        ctx.fillText(dataset.data[i], model.x, y_pos);
+                    }
+                });               
+            }
+        },
                 legend: {
+                  display: false,
                     labels: {
                         fontSize: 20
                     }
@@ -343,12 +369,7 @@ include('../include/connection.php');
                       }
                   }]
                 }
-            },
-            
-          tooltips: {
-            mode: 'index',
-            intersect: true
-          }
+            }
         });
     };
     <?php
