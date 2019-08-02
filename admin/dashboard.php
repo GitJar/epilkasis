@@ -12,6 +12,7 @@ include('../include/connection.php');
 <!DOCTYPE html>
 <html>
   <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>E-Pilkasis | Dashboard</title>
@@ -32,6 +33,14 @@ include('../include/connection.php');
         position: absolute;
         right: 20px;
         bottom: 120px;
+      }
+      .hasil {
+        width: 87%;
+        display: block;
+        float: left;
+      }
+      .grafik{
+        float: right;
       }
     </style>
   </head>
@@ -220,6 +229,7 @@ include('../include/connection.php');
           saveAs(blob, 'chart.png');
       });
     });
+    
     <?php
     if (isset($_GET['page']) && $_GET['page'] == 'kandidat') { ?>
       function tampil() {
@@ -310,6 +320,9 @@ include('../include/connection.php');
                   text: 'Perolehan Suara',
                   fontSize: 30
                 },
+                 hover: {
+                  animationDuration: 0
+                },
                 legend: {
                     labels: {
                         fontSize: 20
@@ -317,23 +330,31 @@ include('../include/connection.php');
                 },
                 scales: {
                   xAxes: [{
+                    stacked: true,
                       ticks: {
                           fontSize:15
                       }
                   }],
                   yAxes: [{
+                    stacked: true,
                       ticks: {
                           fontSize:14,
-                          min:0
+                          beginAtZero: true
                       }
                   }]
                 }
-            }
+            },
+            
+          tooltips: {
+            mode: 'index',
+            intersect: true
+          }
         });
     };
     <?php
     }
     ?>
+    
     </script>
   </body>
 </html>
