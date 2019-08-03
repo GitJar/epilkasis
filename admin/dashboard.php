@@ -15,7 +15,7 @@ include('../include/connection.php');
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>E-Pilkasis | Dashboard</title>
+    <title>E-Pilketos | Dashboard</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
@@ -58,7 +58,7 @@ include('../include/connection.php');
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>E</b>-V</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>E</b>-Voting</span>
+          <span class="logo-lg"><b>E</b>-Pilketos</span>
         </a>
 
         <!-- Header Navbar: style can be found in header.less -->
@@ -353,6 +353,9 @@ include('../include/connection.php');
                     labels: {
                         fontSize: 20
                     }
+                },
+                tooltips: {
+                  enabled: false
                 },
                 scales: {
                   xAxes: [{
