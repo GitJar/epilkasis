@@ -5,7 +5,7 @@
     <div class="col-md-4 col-md-offset-1">
         <div id="content-slider">
             <img src="./assets/img/logo-mtsn-1.png" class="img" alt="Slideshow 2" >
-            <img src="./assets/img/osis_kemenag.png" class="img" alt="Slideshow 3" >
+            <img src="./assets/img/osis.png" class="img" alt="Slideshow 3" >
         </div>
     </div>
     <div class="col-md-6 form">

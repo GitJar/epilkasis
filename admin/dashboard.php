@@ -84,7 +84,7 @@ include('../include/connection.php');
                     <a href="?page=change_password">Ganti Password</a>
                   </li>
                   <li>
-                    <a data-toggle="modal" href="#myModal">Sign out</a>
+                    <a data-toggle="modal" href="?page=logout">Sign out</a>
                   </li>
                 </ul>
               </li>
@@ -150,6 +150,9 @@ include('../include/connection.php');
                       switch ($_GET['page']) {
                         case 'user':
                             include('./user/index.php');
+                            break;
+                        case 'cetak':
+                            include('./cetak.php');
                             break;
                         case 'kelas':
                             include('./kelas/index.php');

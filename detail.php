@@ -67,10 +67,6 @@
                               <td>: <?php echo nl2br($misi); ?></td>
                            </tr>
                            <tr>
-                              <td>Total Perolehan Suara</td>
-                              <td>: <?php echo $suara; ?> Suara</td>
-                           </tr>
-                           <tr>
                               <td>Periode Pencalonan</td>
                               <td>: <?php echo $periode; ?></td>
                            </tr>

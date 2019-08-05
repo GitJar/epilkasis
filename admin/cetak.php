@@ -159,7 +159,7 @@ table#tab th, table#tab td {
 </div>
 <div class="kanan">
     <br>
-    <div class="biasa">Surakarta, &nbsp&nbsp&nbsp Agustus 2019</div>
+    <div class="biasa">Surakarta, 08 Agustus 2019</div>
     <div class="biasa">Pembina OSIS</div>
     <br>
 <br>
